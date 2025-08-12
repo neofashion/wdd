@@ -185,13 +185,13 @@ body {
 }
 .employee-profiles figcaption {
   text-align: center;
-  color: #353a47;
+  color: #fff;
   font-size: 1.08rem;
   font-weight: 600;
 }
 .employee-profiles figcaption span {
   display: block;
-  color: #885a5a;
+  color: #f7c1bb;
   font-size: 0.98rem;
   font-weight: 400;
   margin-top: 0.2em;
