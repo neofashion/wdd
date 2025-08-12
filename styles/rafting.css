@@ -1,3 +1,11 @@
+/* Center About Us section header */
+.about-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #885a5a;
+}
 
 /* about.css - Styles for About Us page */
 
@@ -58,30 +66,43 @@ header a img.logo {
 }
 .hero h1 {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
   width: 100%;
   color: #fff;
-  font-size: 2.5rem;
-  background: rgba(53,58,71,0.5);
-  padding: 1rem 0;
-  letter-spacing: 0.05em;
+  font-size: 3rem;
+  background: rgba(53,58,71,0.55);
+  padding: 1.2rem 0;
+  letter-spacing: 0.07em;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 .hero article {
-  background: #fff;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(53,58,71,0.08);
-  max-width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.97);
+  margin: 0;
+  padding: 2.2rem 2.5rem 2.2rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(53,58,71,0.13);
+  max-width: 600px;
+  min-width: 320px;
   text-align: left;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 .hero article img {
-  float: right;
-  margin: 0 0 1rem 2rem;
-  width: 180px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(53,58,71,0.10);
+  width: 140px;
+  min-width: 100px;
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(53,58,71,0.12);
+  margin: 0 1.2rem 0 0;
 }
 
 .history {
@@ -204,6 +225,25 @@ footer p {
 }
 
 @media (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.1rem;
+    top: 18px;
+    padding: 0.7rem 0;
+  }
+  .hero article {
+    top: 80px;
+    padding: 1.2rem 1rem 1.2rem 0.7rem;
+    max-width: 95vw;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .hero article img {
+    width: 100px;
+    max-width: 120px;
+    margin: 0 0 0.7rem 0;
+  }
   .history-grid {
     grid-template-columns: 1fr;
     gap: 24px;
