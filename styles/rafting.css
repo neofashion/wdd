@@ -1,0 +1,235 @@
+
+/* about.css - Styles for About Us page */
+
+body {
+  background: #f7f7fa;
+  font-family: 'Lato', Arial, sans-serif;
+  color: #353a47;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #885a5a 60%, #353a47 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(53,58,71,0.08);
+  padding: 0;
+  margin-bottom: 2rem;
+}
+header a img.logo {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  margin: 1rem;
+}
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+.main-nav a {
+  color: #fff;
+  background: none;
+  border-radius: 8px;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a.active,
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #f7c1bb;
+  background: #353a47;
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 0 0 18px 18px;
+}
+.hero h1 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 2.5rem;
+  background: rgba(53,58,71,0.5);
+  padding: 1rem 0;
+  letter-spacing: 0.05em;
+}
+.hero article {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(53,58,71,0.08);
+  max-width: 700px;
+  text-align: left;
+}
+.hero article img {
+  float: right;
+  margin: 0 0 1rem 2rem;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(53,58,71,0.10);
+}
+
+.history {
+  background: #fff;
+  color: #353a47;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.history h2 {
+  color: #222;
+  text-align: center;
+  font-size: 2rem;
+}
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.history-text {
+  font-size: 1.2rem;
+  text-align: left;
+  align-self: center;
+  padding: 0 2rem;
+}
+.history-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(53,58,71,0.10);
+}
+
+.adventure {
+  background: #f7f7fa;
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.adventure h2 {
+  font-size: 2rem;
+  color: #885a5a;
+  margin-bottom: 1.5rem;
+}
+.adventure ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.adventure li {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(53,58,71,0.08);
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  min-width: 220px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adventure li img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+.adventure figcaption {
+  color: #353a47;
+  font-size: 1rem;
+  margin-top: 0.3em;
+}
+
+footer {
+  background: #353a47;
+  color: #fff;
+  padding: 1.5rem 2vw 1rem 2vw;
+  margin-top: 2.5rem;
+  display: block;
+}
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.social {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(0.2) brightness(0.95);
+  transition: filter 0.18s, transform 0.18s;
+  cursor: pointer;
+}
+.social a img:hover {
+  filter: grayscale(0) brightness(1.2) drop-shadow(0 2px 8px #fff2);
+  transform: scale(1.12) rotate(-6deg);
+}
+
+@media (max-width: 900px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 1rem 0;
+  }
+  .history-text, .history-image {
+    grid-column: 1;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .history-image img {
+    max-width: 90vw;
+  }
+  .adventure ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero img {
+    height: 180px;
+  }
+  .adventure li {
+    min-width: 140px;
+    max-width: 180px;
+    padding: 0.5rem;
+  }
+}
