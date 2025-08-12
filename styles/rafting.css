@@ -21,8 +21,11 @@ header {
   background: linear-gradient(90deg, #885a5a 60%, #353a47 100%);
   color: #fff;
   box-shadow: 0 4px 16px rgba(53,58,71,0.08);
-  padding: 0;
+  padding: 0 2vw;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header a img.logo {
   width: 72px;
@@ -31,6 +34,7 @@ header a img.logo {
   margin: 1rem;
 }
 .main-nav {
+  margin-left: auto;
   display: flex;
   gap: 0.5rem;
 }
